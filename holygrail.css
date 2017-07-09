@@ -2,24 +2,24 @@ body{
   min-height:100vh;
 }
 main{
-  /* display: */
+  display: flex;
 }
 .content{
-  /* flex-grow: */
+  flex-grow: 1;
 }
 aside{
-  /* order: */
+  order: 1;
 }
 
 main>*{
-  background-color:#eee;
+  background-color:#eeeeee;
   margin:10px;
 }
 main>*:not(:nth-child(1)){
   margin-left:0px;
 }
 header, footer{
-  background-color:#ccc;
+  background-color:#cccccc;
 }
 
 nav, aside{
@@ -29,27 +29,27 @@ nav, aside{
 
 @media screen and (max-width: 620px){
   main{
-    /* flex-direction: */
+    flex-direction: column;
   }
   main>*:not(:nth-child(1)){
     margin-left:10px;
     margin-top:0px;
   }
   nav{
-    /* order: */
+    order: 1;
   }
   aside{
-    /* order: */
+    order: 2;
   }
   nav ul{
-    text-align:center;
+    text-align: center;
   }
   nav figure img{
-    width:100px;
-    float:left;
+    width: 100px;
+    float: left;
   }
   nav, aside{
-    min-width:none;
-    max-width:none;
+    min-width: none;
+    max-width: none;
   }
 }
